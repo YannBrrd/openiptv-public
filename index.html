@@ -1,0 +1,185 @@
+<!doctype html>
+<!-- Template: build.py fills the double-brace keys from i18n/<lang>.json (keys starting with @ come from the build). -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OpenIPTV — Live TV, the way it should feel</title>
+  <meta name="description" content="OpenIPTV plays the playlists you already have, on Android TV and Android phones. Channel numbers, a real guide, recordings, no account.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="OpenIPTV">
+  <meta property="og:description" content="Live TV, the way it should feel. For Android TV and Android phones.">
+  <meta property="og:image" content="https://yannbrrd.github.io/openiptv-public/screenshots/tv-guide.png">
+  <meta property="og:locale" content="en_US">
+  <link rel="canonical" href="https://yannbrrd.github.io/openiptv-public/">
+  <link rel="alternate" hreflang="en" href="https://yannbrrd.github.io/openiptv-public/">
+  <link rel="alternate" hreflang="fr" href="https://yannbrrd.github.io/openiptv-public/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://yannbrrd.github.io/openiptv-public/">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="OpenIPTV, back to top">
+      <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="17" rx="4"/><path d="M12 28h8"/></svg>
+      OpenIPTV
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#tour">TV</a>
+      <a href="#phone">Phone</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <a class="nav__lang" href="fr/" hreflang="fr" lang="fr" title="Français">FR</a>
+    <span class="nav__cta">Coming soon</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero" data-progress>
+    <div class="hero__copy">
+      <p class="eyebrow load" style="--i:0">Android TV · Android phone</p>
+      <h1 class="hero__title load" style="--i:1">Live TV,<br><span class="hero__soft">the way it<br>should feel.</span></h1>
+      <p class="hero__lede load" style="--i:2">OpenIPTV plays the playlists you already have. Quick to set up, quicker to zap, and it never asks you for an account.</p>
+      <div class="hero__actions load" style="--i:3">
+        <span class="pill pill--light">Coming soon to Google Play</span>
+        <a class="link-arrow" href="#tour">Take the tour</a>
+      </div>
+    </div>
+
+    <div class="hero__stage load" style="--i:4">
+      <figure class="tv hero__tv">
+        <div class="tv__screen"><img src="screenshots/tv-channels.png" alt="The live channel grid on a TV, with channel numbers and what is on now" width="1920" height="1080"></div>
+        <div class="tv__foot" aria-hidden="true"></div>
+      </figure>
+      <figure class="phone hero__phone">
+        <div class="phone__screen"><img src="screenshots/phone-live.png" alt="The live channel list on a phone" width="1233" height="2673"></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Statement -->
+  <section class="statement" data-progress aria-label="Zapping">
+    <p class="statement__text" data-words>Press up. The next channel is already there. Type a number, and you are on it.</p>
+  </section>
+
+  <!-- Sticky story -->
+  <section class="story" id="tour" data-story>
+    <div class="story__sticky">
+      <div class="story__steps">
+        <article class="story__step is-active" data-step="0">
+          <p class="eyebrow">Channels</p>
+          <h2>Zap like it is cable.</h2>
+          <p>Every list shows the channel numbers you know from the banner. Up and down to change, digits to jump, OK to confirm. Hidden and locked categories stay out of the way.</p>
+        </article>
+        <article class="story__step" data-step="1">
+          <p class="eyebrow">Guide</p>
+          <h2>The whole evening, at a glance.</h2>
+          <p>The guide refreshes itself in the background. Pick a program to set a reminder, record it, or jump straight to the channel.</p>
+        </article>
+        <article class="story__step" data-step="2">
+          <p class="eyebrow">Settings</p>
+          <h2>Out of the way, a press away.</h2>
+          <p>Two panes made for a remote. Parental PIN, guide refresh, stream format and clock, each with its real options, not a guessing game.</p>
+        </article>
+      </div>
+
+      <figure class="tv story__tv">
+        <div class="tv__screen">
+          <img class="story__shot is-active" data-shot="0" src="screenshots/tv-channels.png" alt="Channel grid" loading="lazy" width="1920" height="1080">
+          <img class="story__shot" data-shot="1" src="screenshots/tv-guide.png" alt="Program guide" loading="lazy" width="1920" height="1080">
+          <img class="story__shot" data-shot="2" src="screenshots/tv-settings.png" alt="Settings in two panes" loading="lazy" width="1920" height="1080">
+        </div>
+        <div class="tv__foot" aria-hidden="true"></div>
+      </figure>
+
+      <ol class="story__dots" aria-hidden="true"><li class="is-active"></li><li></li><li></li></ol>
+    </div>
+  </section>
+
+  <!-- Phone -->
+  <section class="phones" id="phone" data-progress>
+    <div class="section-head reveal">
+      <p class="eyebrow">Phone</p>
+      <h2 class="display">In your pocket.<br>On the big screen.</h2>
+      <p class="lede">Browse on the phone, then send it to the TV with one tap, or Cast it. Pair once with the four digits on the TV, and settings follow.</p>
+    </div>
+    <div class="phones__fan">
+      <figure class="phone phones__item phones__item--left"><div class="phone__screen"><img src="screenshots/phone-guide.png" alt="The program guide on a phone" loading="lazy" width="1233" height="2673"></div></figure>
+      <figure class="phone phones__item phones__item--center"><div class="phone__screen"><img src="screenshots/phone-live.png" alt="Live channels with what is on now and next" loading="lazy" width="1233" height="2673"></div></figure>
+      <figure class="phone phones__item phones__item--right"><div class="phone__screen"><img src="screenshots/phone-settings.png" alt="Settings grouped in sections" loading="lazy" width="1233" height="2673"></div></figure>
+    </div>
+  </section>
+
+  <!-- Features (light) -->
+  <section class="features" id="features">
+    <div class="section-head reveal">
+      <p class="eyebrow eyebrow--dark">Everything else</p>
+      <h2 class="display">Small things.<br>Done properly.</h2>
+    </div>
+
+    <div class="bento">
+      <article class="tile tile--wide reveal">
+        <p class="tile__big">REC</p>
+        <h3>Record what is on. Or what is next.</h3>
+        <p>Start a recording from the player, or schedule one from the guide. It is kept on the TV, and it survives a restart.</p>
+      </article>
+      <article class="tile tile--dark reveal">
+        <p class="tile__big">2&times;</p>
+        <h3>Two channels, one screen.</h3>
+        <p>Watch the match and keep an eye on the news. Left and right choose which one you hear.</p>
+      </article>
+      <article class="tile reveal">
+        <p class="tile__big">&#8634;</p>
+        <h3>Missed it? Replay it.</h3>
+        <p>Catch-up, where your provider offers it, straight from the guide.</p>
+      </article>
+      <article class="tile reveal">
+        <p class="tile__big">PIN</p>
+        <h3>Parental control that stays put.</h3>
+        <p>Lock the categories you choose. One right PIN unlocks them for an hour.</p>
+      </article>
+      <article class="tile tile--tint reveal">
+        <p class="tile__big">&rarr;</p>
+        <h3>Your place, on every device.</h3>
+        <p>Export favorites, resume points and locks, then import them on the TV, or send them over Wi-Fi. Passwords never leave the device.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="privacy" id="privacy">
+    <div class="section-head reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2 class="display">No account.<br>No tracking.<br><span class="hero__soft">No servers of ours.</span></h2>
+    </div>
+    <dl class="facts">
+      <div class="fact reveal"><dt>0</dt><dd>accounts to create. Add a playlist and watch.</dd></div>
+      <div class="fact reveal"><dt>0</dt><dd>analytics or advertising SDKs in the app.</dd></div>
+      <div class="fact reveal"><dt>AES</dt><dd>encrypted credentials, keyed by the Android Keystore.</dd></div>
+    </dl>
+  </section>
+
+  <!-- Closing -->
+  <section class="closing">
+    <h2 class="display reveal">Bring your own playlist.</h2>
+    <p class="lede reveal">M3U links, playlist files and username &amp; password services.</p>
+    <span class="pill pill--light reveal">Coming soon to Google Play</span>
+    <p class="disclaimer reveal">OpenIPTV is a player only: it includes no channels, films or series. Use it only with services and content you are authorized to access.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>&copy; <span data-year>2026</span> OpenIPTV</span>
+    <a href="privacy.html">Privacy policy</a>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
